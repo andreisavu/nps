@@ -12,20 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-///
-/// Net Promoter Score (NPS®) is based on a simple question:
-/// "How likely is that you would recommend [something] to a
-/// friend or colleague?" on scale from 0 to 10
-///
-/// See the following pages for more details:
-/// http://www.netpromoter.com/why-net-promoter/know
-/// https://hbr.org/2003/12/the-one-number-you-need-to-grow
-///
-/// You don't need to pay to use NPS:
-/// http://www.genroe.com/blog/do-i-need-to-pay-to-use-net-promoter/7445
-///
-/// This library provides utilities for summarizing NPS® surveys.
-///
+//!
+//! Net Promoter Score (NPS®) is based on a simple question:
+//! "How likely is that you would recommend [something] to a
+//! friend or colleague?" on scale from 0 to 10
+//!
+//! See the following pages for more details:
+//!
+//!  * http://www.netpromoter.com/why-net-promoter/know
+//!  * https://hbr.org/2003/12/the-one-number-you-need-to-grow
+//!
+//! You don't need to pay to use NPS:
+//!
+//!  * http://www.genroe.com/blog/do-i-need-to-pay-to-use-net-promoter/7445
+//!
+//! This library provides utilities for summarizing NPS® surveys.
+//!
 
 pub mod rating;
 pub mod summary;
