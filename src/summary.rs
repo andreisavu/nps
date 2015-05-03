@@ -18,7 +18,7 @@ use rating::Rating;
 ///
 /// It records a couple of counters that can be used to compute the
 /// and it can also show a histogram of all the ratings.
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub struct Summary {
 
     /// Rated 9 or 10. Promoters are loyal enthusiasts.
@@ -108,4 +108,12 @@ fn test_all_negative() {
     assert!(s.score() == -1.0);
     assert!(s.detractors == 1);
     assert!(s.histogram[6] == 1);
+}
+
+#[test]
+fn test_equality() {
+    let a = Summary::new(vec![Rating::new(5)]);
+    let b = a.clone();
+
+    assert!(a == b);
 }
