@@ -15,7 +15,10 @@
 [package]
 name = "nps"
 description = "A library providers utilities for summarizing NPS® surveys."
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Andrei Savu <asavu@apache.org>"]
 license = "Apache-2.0"
 repository = "https://github.com/datashape/nps"
+
+[[example]]
+name = "simple"
